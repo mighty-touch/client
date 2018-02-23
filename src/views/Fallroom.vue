@@ -1,7 +1,7 @@
 <template>
   <div>
-    <b-card>
-      <!-- <gameplay2/> -->
+    <h1>Button Hunter</h1>
+    <b-card border-variant="light">
       <ButtonHunter/>
     </b-card>
   </div>
@@ -17,5 +17,6 @@ export default {
 </script>
 
 <style>
+
 
 </style>

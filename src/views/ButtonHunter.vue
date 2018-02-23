@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <button @click="random(1)" v-bind:style="styleObject" id="haha">HAHA</button>
-    <button @click="random(2)" v-bind:style="styleObject2" id="hehe">HEHE</button>
+    <button @click="random(1)" v-bind:style="styleObject" class="unselectable" id="haha">HAHA</button>
+    <button @click="random(2)" v-bind:style="styleObject2" class="unselectable" id="hehe">HEHE</button>
   </div>
 </template>
 
@@ -62,12 +62,12 @@
         this.$db.ref().update({
           "room2": {
             p1: {
-              posH: '0px',
+              posH: '100px',
               posW: '0px',
               score: 0
             },
             p2: {
-              posH: '0px',
+              posH: '100px',
               posW: '150px',
               score: 0
             }
@@ -127,7 +127,14 @@
   }
 </script>
 
-<style>
+<style scoped>
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
   .table {
     text-align: center;
     align-content: center;
@@ -155,3 +162,4 @@
     margin: 4px 2px;
     cursor: pointer;
   }
+</style>

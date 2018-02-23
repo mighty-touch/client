@@ -55,12 +55,19 @@ export default {
   created(){
     window.addEventListener('shake', this.pullTug, false)
   },
+  watch: {
+    room() {
+      this.winner()
+    }
+  },
   methods: {
     pullTug() {
           if(this.team==='kiri') {
             this.$db.ref().update({"shake": this.room--})
+            this.winner()
           } else if (this.team==='kanan'){
             this.$db.ref().update({"shake": this.room++})
+            this.winner()
           }
     },
     resetTug() {
@@ -68,7 +75,7 @@ export default {
     },
     winner() {
       if (this.room < -2) {
-        swal("Chitoge Ichijō と ご結婚おめでとうございます。", "", "success")
+        swal("Chitoge Kirisaki と ご結婚おめでとうございます。", "", "success")
         this.resetTug()
       }
       if (this.room > 2) {
