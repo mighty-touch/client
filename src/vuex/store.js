@@ -11,7 +11,8 @@ Vue.use(Vuex)
 const state = {
   valueA:0,
   valueB:0,
-  max:100
+  max:100,
+  valueTarik:50
 }
 
 
@@ -25,6 +26,12 @@ const mutations = {
   },
   buttonB (state, payload) {
     state.valueB++
+  },
+  buttonTarikLeft (state, payload) {
+    state.valueTarik--
+  },
+  buttonTarikRight (state, payload) {
+    state.valueTarik++
   }
 }
 
