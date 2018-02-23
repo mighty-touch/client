@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <listroom></listroom>
-    <router-view></router-view>
+    <listroom class="rapihin"></listroom>
   </div>
 </template>
 
@@ -14,5 +13,7 @@ export default {
 </script>
 
 <style>
-
+  .rapihin{
+    margin-top: 30px
+  }
 </style>
