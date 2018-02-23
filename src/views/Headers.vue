@@ -5,7 +5,7 @@
     
   </a>
   <h3 class="pointer" @click="toAbout">
-    About us
+    About Us
   </h3>
 </nav>
 </template>
