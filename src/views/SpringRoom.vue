@@ -1,16 +1,16 @@
 <template>
   <div>
     <b-card>
-      <gameplay/>
+      <TarikTambang/>
     </b-card>
   </div>
 </template>
 
 <script>
-import gameplay from './Gameplay'
+import TarikTambang from './TarikTambang'
 export default {
   name: 'Springroom',
-  components: {gameplay}
+  components: {TarikTambang}
 }
 </script>
 
