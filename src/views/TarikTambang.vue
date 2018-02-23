@@ -29,6 +29,11 @@ export default {
      color:null
    }
  },
+ watch: {
+   room() {
+     this.winner()
+   }
+ },
  computed: {
    currentImage () {
      let image = ''
