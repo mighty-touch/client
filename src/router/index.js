@@ -5,6 +5,7 @@ import About from '@/views/About'
 import Lobby from '@/views/Lobby'
 import Spring from '@/views/SpringRoom'
 import Fall from '@/views/Fallroom'
+import WinPage from '@/views/WinPage'
 
 Vue.use(Router)
 
@@ -35,6 +36,12 @@ export default new Router({
     path: '/lobby/fallroom',
     name: 'Fall',
     component: Fall
+    },
+    {
+      path:'/winner',
+      name: 'Winner',
+      component: WinPage,
+      props: true
     }
   ]
 })

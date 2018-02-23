@@ -20,7 +20,8 @@ export default {
   data () {
     return {
       time:null,
-      color:null
+      color:null,
+      finalScore: this.$store.state.valueTarik
     }
   },
   created () {
@@ -50,7 +51,7 @@ export default {
         console.log('tick', (Math.floor(ms) / 1000).toFixed())
         })
       timer.on('done', () => {
-        this.$router.push({name : 'Home'})
+        this.checkWinner()
         console.log('udah')
         })
 
@@ -68,7 +69,13 @@ export default {
     },
     checkWinner () {
       if(this.valueTarik < 50 || this.valueTarik === 0){
-        
+        let score= this.finalScore - this.valueTarik
+         console.log(score)
+        this.$router.push({name : 'Winner',query: {winner: 'Tim NVDIA',score:score}})
+      }else {
+        let score =  this.valueTarik - this.finalScore
+        console.log(score)
+        this.$router.push({name : 'Winner',query: {winner: 'Tim AMD',score: score}})
       }
     }
   }
