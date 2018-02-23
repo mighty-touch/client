@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <h1>
-      How To Play<br>
+    <h1>How To Play<br>
        <small class="text-muted">(for dummy)</small>
     </h1>
   </div>

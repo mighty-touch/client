@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <how class="howto"/>
-    <b-button variant="outline-success" size="lg" @click="toLobby">TO LOBBY</b-button>
+    <b-button class="test" variant="outline-success" size="lg" @click="toLobby">TO LOBBY</b-button>
   </div>
 </template>
 
