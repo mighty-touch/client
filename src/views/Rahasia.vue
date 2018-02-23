@@ -1,7 +1,6 @@
 <template>
   <div>
     <b-card>
-      <!-- <gameplay2/> -->
       <Waifus/>
     </b-card>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <headers/>
+    <headers class="top"/>
     <router-view/>
   </div>
 </template>
@@ -16,6 +16,9 @@ export default {
 </script>
 
 <style>
+.top {
+  margin-bottom: 50px;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
