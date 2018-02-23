@@ -5,17 +5,7 @@
         <img :src="currentImage" style="margin:auto;">
       </div>
     </div>
-    <div class="columns">
-      <table class="table column is-offset-5">
-      <thead>
-        <th>Tarik Tambang!!!!!</th>
-      </thead>
-      <tbody>
-        <td></td>
-        <td>{{ room }}</td>
-      </tbody>
-    </table>
-    </div>
+    <h2>Tarik Bambang!!!</h2>
     <b-progress :value="room" max="4" variant="success"></b-progress>
     <div>
     <form>
