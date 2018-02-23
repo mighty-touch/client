@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand pointer">
-    <h3 @click="toHome">マイチ</h3>
+    <h3 @click="toHome">マイティー</h3>
     
   </a>
   <h3 class="pointer" @click="toAbout">
