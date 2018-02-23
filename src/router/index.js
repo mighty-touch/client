@@ -6,7 +6,7 @@ import Lobby from '@/views/Lobby'
 import Spring from '@/views/SpringRoom'
 import Fall from '@/views/Fallroom'
 import WinPage from '@/views/WinPage'
-// import Rahasia from '@/views/Rahasia'
+import Rahasia from '@/views/Rahasia'
 
 Vue.use(Router)
 

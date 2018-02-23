@@ -14,6 +14,6 @@ export default {
 
 <style>
   .rapihin{
-    margin-top: 30px
+    /*margin-top: 30px*/
   }
 </style>
