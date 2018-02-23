@@ -1,10 +1,10 @@
 <template>
   <div>
-   <carousel>
-     <slide>
-       <img :src="imageSlide" alt="" srcset="">
-     </slide>
-   </carousel>
+    <h1>PUNCH IT!</h1>
+    <h1>TOUCH IT!</h1>
+    <h1>CLICK IT!</h1>
+    <h1>SHAKE IT!</h1>
+    <h1>TO YOUR HEART'S CONTENT!!</h1>
   </div>
 </template>
 
